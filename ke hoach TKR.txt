@@ -1,0 +1,77 @@
+Player: Move, jump, double jump (GIữ nút sẽ nhảy cao, thả luôn sẽ nhảy thấp), dash, wallSide
+	Attack: top, down , side
+	FireBall(Tiêu tốn soul)
+	Attack Spike Jump( tấn công spike sẽ nảy lên)
+	Player Health
+	Player Healing(Bằng cách giữ A - tiêu tốn soul)
+	Player Soul
+	Player Gold
+		- Chết rơi tiền (xong) 
+			- Chết rơi tiền, nếu nhặt lại được thì lấy lại toàn bộ
+			- Nếu chết tiếp trược khi nhặt được thì mất toàn bộ
+
+cam: - Người chơi có thể nhìn lên nhìn xuống bằng phím mũi tên
+     -  Đến gần vực thì tự động lùi xuống 
+
+Org: Người chơi tấn công nhận đc tiền.
+
+CheckPoint: CheckPoint, trapCheckPoint.
+
+
+Enemy: - Hồi sinh khi người chơi chêt, chuyển màn, về điểm checkPoint. 
+       - Map 1,2:(5) Worm: di chuyển ngang, FastWorm: di chuyên nhanh khi target, WormAround: Di chuyển xung quanh đá, 
+		flying: bay đến target, flyingRandom: bay lung tung dổi chiều khi gặp tường.
+       - Map 3:(8) WalkTree: di chuyển ngang, JumpWorm: Nhảy đến nv, flying2: bay đến nv, BoomWorm: Chết sẽ phát nổ, explosionWorm: bị tấn công sẽ phát nổ. 
+		Mom butterfly: sinh ra litter butterfly, litter butterfly: lao đến nv, Platform: Để nv đánh nảy lên.
+	
+       - Map 4:(4) DogMachine: di chuyển ngang, jumpOneEyeMachine: nhảy đến nv, OneEyeMachine: dứng im chặn đường nv, UpdownMachien: di chuyển lên xuống.
+       - Map 5: MoveShooter: cẩu bắn đạn vào nv, FlyingShooter: bắn 1 viên fireball, FlyingTripbleShooter: bắn 3 viên fireball, 
+		jumpMove: di chuyển nhảy, Wall Worm: di chuyển dọc tường. 
+.
+
+Boss:
+	Map 1,2: BlueBirdAngry: Move, Attack followPlayer, Attack Up Down
+	       Mad Hog: Jump Attack, Dash Attack, Rampage Attack(spike Fall), WaveAttack 
+ 	Map 3: Fairy Poison: move, shotting attack
+	       Tusk: Jump Attack, moveAttack, shoot attack, Top shoot attack
+	Map 4: RaMachine: NearAttack, shoot attack
+	       NuclearMachine: MoveShoot, JumpAttack, RampageShoot.
+	Map 5: PhoenixMachine: Move And SwordAttack, Shield move.
+	       Brings Of Death: Moving, jumpAttack, waveAttack, spawn enemy, castSpell, meteor attack.	
+	
+
+
+- Map 1,2: Map hướng dẫn, máp cave
+- Map 3: Map forest 
+- Map 4: Map Desert
+- Map 5: Map castle
+- Trang bị: BodyArmor: +1 maxhealth
+	    Pant: +1 maxhealth
+	    Boot: +1 maxhealth 
+	    Belt: +1 maxhealth 
+	    Necklace: +1 maxSoul 
+	    Ring: +1 maxSoul  
+
+- shop: (Xong)
+	Shop Item: BodyArmor: +1 maxhealth
+	    Pant: +1 maxhealth
+	    Boot: +1 maxhealth 
+	    Belt: +1 maxhealth 
+	    Necklace: +1 maxSoul 
+	    Ring: +1 maxSoul 
+	ShopMiniMap: MiniMap2 ,MiniMap3 ,MiniMap4 ,MiniMap5 
+
+- Âm Thanh
+- Save game:
+	Save Vàng
+	Save Soul Tổng
+	Save Soul
+	Save Máu tổng
+	Save máu
+	Save vị trí respawn
+	Map active
+	MiniMap active
+	Save Boss đã giết
+	
+
+
